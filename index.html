@@ -1,24 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/flexboxgrid.min.css">
 </head>
+
 <body>
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Form to order drugs</title>
     </head>
+
     <body>
-        
+        <div class="orderDrugsForm">
+            <div class="orderDrugsForm__text">
+                <p class="orderDrugsForm__header">W celu złożenia zamówienia wypełnij formularz</p>
+                <ul class="orderDrugsForm__list">
+                    <li class="orderDrugsForm__item">
+                        Formularz umożliwia możliwość zamówienia leków z recepty elektronicznej podając numer PIN i PESEL
+                        jak również leków, suplementów diety i wyrobów medycznych podając ich nazwę, ilość opakowań 
+                        oraz ilość wielkość w odpowiednich polach formularza.
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        W razie niejasności skontujemy się z Panią/Panem drogą mailową.
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        W razie niejasności będziemy w kontakcie mailowym.
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        Złożone zamówienie nie zobowiązuje do wykupienia. O ile to możliwe odbierając leki w aptece możesz wybrać
+                        zamiennik, zrezygnować lub zrealizować kolejną receptę oraz dokupić inne leki.
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        Formularz ma na celu przygotowanie dla Państwa leków skracając czas realizacji recepty.
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        Po wypełnieniu formularza otrzymasz potwierdzenie przyjęcia zamówienie jak i informację o
+                        przygotowanym zamówieniu
+                    </li>
+                    <li class="orderDrugsForm__item">
+                        Czas relalizacji zamówienia - 3 dni robocze. Wiadomość otrzymasz...
+                    </li>
+                </ul>
+            </div>
+            <div class="orderDrugsForm form">
+                <fieldset class="orderDrugsForm fieldset">
+                    <legend class="orderDrugsForm legend">Dane zamawiającego</legend>
+                    <label class="orderDrugsForm label">
+                        <div class="ordererDrugsForm label__name">Imię i nazwisko / Nick
+                            <span class="star">*</span>
+                        </div>
+                        <div class="label__input">
+                            <input type="text" name="name" value size="40">
+                        </div>
+                    </label>
+                    <label class="orderDrugsForm label">
+                        <div class="ordererDrugsForm label__email">e-mail
+                            <span class="star">*</span>
+                        </div>
+                        <div class="input-container col lg-8">
+                           <input type="text" name="name" value size="40">
+                        </div>
+                    </label>
+                </fieldset>
+                <fieldset class="orderDrugsForm fieldset">
+                    <legend class="orderDrugsForm fieldset__legend">Leki na receptę</legend>
+                    <div class="orderDrugsForm fieldset__container">
+                        <label class="orderDrugsForm fieldset__label">PIN recepty
+                            <span class="star">*</span>
+                            <input type="text" name="name" value size="40" placeholder="Podaj kod recepty">
+                        </label>
+                        <label class="orderDrugsForm fieldset__label">PESEL
+                            <span class="star">*</span>
+                            <input type="text" name="name" value size="40">
+                        </label>
+                    </div>
+                    <div class="orderDrugsForm fieldset">
+                        <label class="orderDrugsForm fieldset__label">Recepta papierowa
+                           <input type="text" name="name" value size="40" placeholder="Podaj nazwy lekow na receptę">
+                        </label>
+                    </div>
+                    <button class="orderDrugsForm fieldset__button">
+                        Dodaj kolejną receptę
+                    </button>
+                </fieldset>
+                <fieldset class="orderDrugsForm fieldset">
+                    <legend class="orderDrugsForm fieldset__legend">Pozostałe leki/suplementy diety/wyroby medyczne</legend>
+                    <div class="orderDrugsForm fieldset__container">
+                        <label class="orderDrugsForm fieldset__label"> nazwa leku
+                          <input type="text" name="name" value size="40" placeholder="Podaj kod recepty">
+                        </label>
+                        <label class="orderDrugsForm fieldset__label">dawka
+                            <span class="star">*</span>
+                            <input type="text" name="name" value size="40">
+                        </label>
+                        <label class="orderDrugsForm fieldset__label">ilość opakowań
+                            <span class="star">*</span>
+                            <input type="text" name="name" value size="40">
+                        </label>
+                    </div>
+                    <div class="orderDrugsForm fieldset__button">
+                        <button>Dodaj kolejny lek</button>
+                    </div>
+                </fieldset>
+                <fieldset class="orderDrugsForm fieldset">
+                    <legend class="orderDrugsForm fieldset__legend">Twoje zamówienie</legend>
+                    <div class="orderDrugsForm textarea">
+                      Zamówione leki:
+                    </div>
+                    <button class="orderDrugsForm fieldset__button">
+                        Wyślij
+                    </button>
+                </fieldset>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
     </body>
+
     </html>
 </body>
+
 </html>
