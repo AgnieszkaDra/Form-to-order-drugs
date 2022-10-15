@@ -25,22 +25,22 @@
     <body>
         <div class="form xs-12">
             <div class="col xs-12 md-6">
+    
                 <p>W celu złożenia zamówienia wypełnij formularz</p>
                 <ul>
                     <li>
-                        Formularz umożliwia możliwość zamówienia leków z recepty elektronicznej podając numer PIN i PESEL
-                        jak również leków, suplementów diety i wyrobów medycznych podając ich nazwę, ilość opakowań 
-                        oraz ilość wielkość w odpowiednich polach formularza.
+                        Formularz umożliwia możliwość zamówienia leków z recepty elektronicznej jak i podając
+                        ...
                     </li>
                     <li>
-                        W razie niejasności skontujemy się z Panią/Panem drogą mailową.
+                        Pozostałe leki i wyroby medyczne można zamówić wypełniając przeznaczone do tego celu pole
                     </li>
                     <li>
-                        W razie niejasności będziemy w kontakcie mailowym.
+                        W razie niejasności będziemy się z Panią/Panem kontaktować drogą mailową
                     </li>
                     <li>
-                        Złożone zamówienie nie zobowiązuje do wykupienia. O ile to możliwe odbierając leki w aptece możesz wybrać
-                        zamiennik, zrezygnować lub zrealizować kolejną receptę oraz dokupić inne leki.
+                        Złożone zamówienie nie zobowiązuje do wykupienia. Bez problemu możesz zamienić wybrać
+                        zamiennik, zrezygnować lub zrealizować kolejną receptę
                     </li>
                     <li>
                         Formularz ma na celu przygotowanie dla Państwa leków skracając czas realizacji recepty.
@@ -53,108 +53,124 @@
                         Czas relalizacji zamówienia - 3 dni robocze. Wiadomość otrzymasz...
                     </li>
                 </ul>
+    
             </div>
-            <div class="orderDrugsForm__form container container--fixed col xs-12 lg-6">
-                <fieldset class="orderDrugsForm fieldset col xs-12 lg-12">
-                    <legend class="orderDrugsForm legend">Dane zamawiającego</legend>
-                    <label class="orderDrugsForm label">
-                        <div class="ordererDrugsForm label__text">Imię i nazwisko / Nick
+            <div class="col xs-12 md-6">
+                <fieldset>
+                    <legend>Dane zamawiającego</legend>
+                    <label class="row u-form-row">
+                        <div class="col lg-4">Imię i nazwisko
                             <span class="star">*</span>
                         </div>
-                        <div class="label__input">
-                            <input type="text" name="name" value size="20">
+                        <div class="col lg-8">
+                            <div class="c-tick">
+                                <span class="">
+                                    <input type="text" name="name" value size="40">
+                                </span>
+                            </div>
                         </div>
                     </label>
-                    <label class="orderDrugsForm label">
-                        <div class="orderDrugsForm label__text">e-mail
+                    <label class="row u-form-row">
+                        <div class="col lg-4">e-mail
                             <span class="star">*</span>
                         </div>
-                        <div class="label__input">
-                           <input type="text" name="name" value size="20">
+                        <div class="col lg-8">
+                            <div class="c-tick">
+                                <span class="">
+                                    <input type="text" name="name" value size="40">
+                                </span>
+                            </div>
                         </div>
                     </label>
                 </fieldset>
-                <fieldset class="orderDrugsForm fieldset col xs-12 lg-12">
-                    <legend class="orderDrugsForm fieldset__legend">Leki na receptę</legend>
-                    <div class="orderDrugsForm fieldset__container">
-                        <label class="orderDrugsForm fieldset__label">
-                            <div class="orderDrugsForm label__text">
-                                PIN recepty
-                                <span class="star">*</span>
+                <fieldset>
+                    <legend>Leki na receptę</legend>
+                    <div class="prescription">
+                        <label class="row u-form-row">PIN recepty
+                            <div class="col lg-4">
+                                <span class="">
+                                    <input type="text" name="name" value size="40" placeholder="Podaj kod recepty">
+                                </span>
                             </div>
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20" placeholder="Podaj kod recepty">
-                            </div>
+    
                         </label>
-                        <label class="orderDrugsForm fieldset__label label">
-                            <div class="orderDrugsForm label__text">
-                                PESEL
+                        <label class="row u-form-row">
+                            <div class="col lg-4">PESEL
                                 <span class="star">*</span>
                             </div>
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20">
+                            <div class="col lg-8">
+                                <div class="c-tick">
+                                    <span class="">
+                                        <input type="text" name="name" value size="40">
+                                    </span>
+                                </div>
                             </div>
                         </label>
                     </div>
-                    <div class="orderDrugsForm fieldset">
-                        <label class="orderDrugsForm fieldset__label label">
-                            <div class="orderDrugsForm label__text">
-                                Recepta papierowa
-                            </div>
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20" placeholder="Podaj nazwy lekow na receptę">
-                            </div>
-                        </label>
+                    <div class="col lg-8">
+                        <button>Dodaj kolejną receptę</button>
                     </div>
-                    <button class="orderDrugsForm fieldset__button">
-                        Dodaj kolejną receptę
-                    </button>
                 </fieldset>
-                <fieldset class="orderDrugsForm fieldset col xs-12 lg-12">
-                    <legend class="orderDrugsForm fieldset__legend">Pozostałe leki/suplementy diety/wyroby medyczne</legend>
-                    <div class="orderDrugsForm fieldset__container">
-                        <label class="orderDrugsForm fieldset__label label">
-                            <div class="orderDrugsForm label__text">
-                                nazwa leku
-                            </div> 
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20" placeholder="">
+                <fieldset>
+                    <legend>Pozostałe leki/suplementy diety/wyroby medyczne</legend>
+                    <div class="prescription">
+                        <label class="row u-form-row"> nazwa leku
+                            <div class="col lg-4">
+                                <span class="">
+                                    <input type="text" name="name" value size="40" placeholder="Podaj kod recepty">
+                                </span>
+                            </div>
+    
+                        </label>
+                        <label class="row u-form-row">
+                            <div class="col lg-4"> dawka
+                                <span class="star">*</span>
+                            </div>
+                            <div class="col lg-8">
+                                <div class="c-tick">
+                                    <span class="">
+                                        <input type="text" name="name" value size="40">
+                                    </span>
+                                </div>
                             </div>
                         </label>
-                        <label class="orderDrugsForm fieldset__label label">
-                            <div class="label__text">
-                                dawka
+                        <label class="row u-form-row">
+                            <div class="col lg-4"> ilość opakowań
+                                <span class="star">*</span>
                             </div>
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20">
-                            </div>
-                        </label>
-                        <label class="orderDrugsForm fieldset__label label">
-                            <div class="label__text">
-                                ilość opakowań
-                            </div>
-                            <div class="label__input">
-                                <input type="text" name="name" value size="20">
+                            <div class="col lg-8">
+                                <div class="c-tick">
+                                    <span class="">
+                                        <input type="text" name="name" value size="40">
+                                    </span>
+                                </div>
                             </div>
                         </label>
                     </div>
-                    <div class="orderDrugsForm fieldset__button">
+                    <div class="col lg-8">
                         <button>Dodaj kolejny lek</button>
                     </div>
                 </fieldset>
-                <fieldset class="orderDrugsForm fieldset col xs-12 lg-12">
-                    <legend class="orderDrugsForm fieldset__legend">Twoje zamówienie</legend>
-                    <div class="orderDrugsForm textarea">
-                      Zamówione leki:
+                <fieldset>
+                    <legend>Twoje zamówienie</legend>
+                    <div class="prescription">
+                       kbjkbjk
                     </div>
-                    <button class="orderDrugsForm fieldset__button">
-                        Wyślij
-                    </button>
+                    <div class="col lg-8">
+                        <button>Wyślij</button>
+                    </div>
                 </fieldset>
-            </div>
-        </div>
-
-        <script src="./app.js"></script>
+    
+    
+    
+               <section>
+                <article>
+                    <h1>looijjhj</h1>
+                </article>
+               </section>
+    
+    
+      </div>
     </body>
 
     </html>
